@@ -100,7 +100,7 @@ ORBITA-DIGITAL-MAESTRO/
 1. Clone/download repository.
 2. Open `index.html` in your browser.
 3. Click **ENTER EXPERIENCE**.
-4. Allow camera permissions when prompted (and click to unlock browser audio playback).
+4. Allow camera permissions when prompted (audio is unlocked by the **ENTER EXPERIENCE** click).
 
 ### Option B — Local Server (recommended for camera/web APIs)
 Use any local static server, for example:
@@ -144,7 +144,6 @@ http://localhost:8080
 
 - Best experienced on modern desktop browsers (Chrome/Edge recommended).
 - Camera mode requires camera permissions.
-- Audio starts only after user interaction due to browser autoplay policy.
 
 ---
 
