@@ -99,8 +99,8 @@ ORBITA-DIGITAL-MAESTRO/
 ### Option A — Quick Open
 1. Clone/download repository.
 2. Open `index.html` in your browser.
-3. Click **ENTER EXPERIENCE**.
-4. Allow camera permissions when prompted (audio is unlocked by the **ENTER EXPERIENCE** click).
+3. Click **ENTER EXPERIENCE** to unlock browser audio.
+4. Allow camera permissions when prompted.
 
 ### Option B — Local Server (recommended for camera/web APIs)
 Use any local static server, for example:
@@ -143,7 +143,6 @@ http://localhost:8080
 ## 📌 Notes
 
 - Best experienced on modern desktop browsers (Chrome/Edge recommended).
-- Camera mode requires camera permissions.
 
 ---
 
