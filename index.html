@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORBITA | The Digital Maestro</title>
+    <link rel="stylesheet" href="style.css?v=1715600050">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+    <!-- MediaPipe Hand Tracking -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Background Camera Canvas -->
+    <div id="video-bg">
+        <video id="camera-feed" playsinline></video>
+        <canvas id="camera-overlay"></canvas>
+        <div class="video-vignette"></div>
+    </div>
+
+    <div id="overlay">
+        <div class="overlay-content">
+            <h1>ORBITA</h1>
+            <p>Conduct Your Own Cinematic Universe</p>
+            <button id="start-audio">ENTER EXPERIENCE</button>
+            <button id="test-beep" style="background:transparent; border:1px solid rgba(255,255,255,0.3); margin-top:10px; font-size:12px; opacity:0.6;">TEST BEEP</button>
+        </div>
+    </div>
+
+    <div id="app" class="hidden">
+        <header>
+            <div class="logo">ORBITA</div>
+            <div class="controls-row">
+                <div class="mode-toggle">
+                    <button id="mode-mouse" class="mode-btn active">MOUSE</button>
+                    <button id="mode-camera" class="mode-btn">CAMERA</button>
+                    <button id="mode-creep" class="mode-btn special">CREEP</button>
+                </div>
+                <div class="voice-toggle">
+                    <button class="voice-btn active" data-voice="aura">AURA</button>
+                    <button class="voice-btn" data-voice="nova">NOVA</button>
+                    <button class="voice-btn" data-voice="orbit">ORBIT</button>
+                    <button class="voice-btn" data-voice="pulse">PULSE</button>
+                    <button class="voice-btn" data-voice="ether">ETHER</button>
+                    <button class="voice-btn" data-voice="maestro">MAESTRO</button>
+                </div>
+                <div class="description">Maestro Podium Engine v5.1</div>
+            </div>
+        </header>
+
+        <main id="canvas-container">
+            <!-- p5.js sketch will be injected here -->
+        </main>
+
+        <footer class="controls">
+            <div id="creep-lyrics-container" class="hidden">
+                <div class="teleprompter">
+                    <div id="lyrics-display">
+                        <!-- Populated by script -->
+                    </div>
+                </div>
+                <div class="creep-controls">
+                    <div class="creep-shortcuts">
+                        <button class="chord-shortcut" data-root="G" data-type="Major">G</button>
+                        <button class="chord-shortcut" data-root="B" data-type="Major">B</button>
+                        <button class="chord-shortcut" data-root="C" data-type="Major">C</button>
+                        <button class="chord-shortcut" data-root="C" data-type="Minor">Cm</button>
+                        <button id="creep-play-btn" class="chord-shortcut primary">PLAY</button>
+                    </div>
+                    <div class="song-info">RADIOHEAD — CREEP</div>
+                </div>
+            </div>
+            <div class="status-panel">
+                <span id="current-chord">ROOT: — | TYPE: —</span>
+                <span id="instruction-text">CONDUCT TO PLAY</span>
+            </div>
+            <div class="action-buttons">
+                <button id="record-btn" title="Record performance">
+                    <span class="record-icon"></span> RECORD
+                </button>
+            </div>
+        </footer>
+
+        <div class="legend">
+            <div class="legend-item"><span>Horizontal</span> Chords & Harmony</div>
+            <div class="legend-item"><span>Vertical</span> Octaves & Register</div>
+            <div class="legend-item"><span>Radius</span> Crescendo & Bloom</div>
+        </div>
+    </div>
+
+    <script src="script.js?v=1715600052"></script>
+</body>
+</html>
