@@ -100,7 +100,7 @@ ORBITA-DIGITAL-MAESTRO/
 1. Clone/download repository.
 2. Open `index.html` in your browser.
 3. Click **ENTER EXPERIENCE** to unlock browser audio.
-4. Allow camera permissions when prompted.
+4. If you use **CAMERA** mode, allow camera permissions when prompted.
 
 ### Option B — Local Server (recommended for camera/web APIs)
 Use any local static server, for example:
@@ -142,7 +142,7 @@ http://localhost:8080
 
 ## 📌 Notes
 
-- Best experienced on modern desktop browsers (Chrome/Edge recommended).
+- Best experienced on modern desktop browsers (Chrome/Edge recommended) with WebRTC support for camera tracking.
 
 ---
 
